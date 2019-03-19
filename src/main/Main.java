@@ -1,8 +1,10 @@
 package main;
 
+import main.View.GraphicalBall;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        GraphicalBall ball = new GraphicalBall();
     }
 }
