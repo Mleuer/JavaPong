@@ -7,8 +7,8 @@ import java.awt.*;
 
 public class Ball {
 
-    private Dimension size = new Dimension(4, 4);
-    public Point position = new Point();
+    private Dimension size = new Dimension(20, 20);
+    private Point position = new Point(640, 360);
 
     public void move(Direction direction){
         this.position.x += direction.value.x;
@@ -19,10 +19,21 @@ public class Ball {
         this.position.x = x;
         this.position.y = y;
     }
-
     public Point getPosition(){
         return this.position;
     }
+
+    public void setSize(int width, int height){
+        this.size.width = width;
+        this.size.height = height;
+    }
+    public Dimension getSize(){
+        return this.size;
+    }
+
+
+
+
 
 }
 
