@@ -3,27 +3,49 @@ package main.View;
 import main.Models.Ball;
 import main.Models.Paddle;
 
-import java.awt.Dimension;
-import java.awt.Graphics;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.*;
 
-public class Window extends JPanel {
+public class Window extends JPanel implements ActionListener {
 
-    private GraphicalBall ball = new GraphicalBall();
-    private GraphicalPaddle paddle = new GraphicalPaddle();
+    Timer timer = new Timer(5, this);
 
-    // create the GUI explicitly on the Swing event thread
-    public void display() {
+    private Ball ball = new Ball();
+    private Paddle paddle = new Paddle();
 
-        JFrame frame = new JFrame("Pong");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(ball);
-        frame.getContentPane().add(paddle);
-        frame.pack();
-        frame.setLocationByPlatform(true);
-        frame.setVisible(true);
+
+
+    @Override
+    public void paintComponent(Graphics graphics) {
+        super.paintComponent(graphics);
+        Graphics2D graphics2D = (Graphics2D) graphics;
+        graphics2D.setColor(Color.BLACK);
+        graphics2D.fill(this.ball);
+        timer.start();
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (ball.x < 0 || ball.x > 580 ) {
+            ball.velocityX = -ball.velocityX;
+        }
+        if (ball.y < 0 || ball.y > 380 ) {
+            ball.velocityY = -ball.velocityY;
+        }
 
+        ball.x += ball.velocityX;
+        ball.y += ball.velocityY;
+        repaint();
+    }
 
+//    public void display() {
+//
+//        JFrame frame = new JFrame("Pong");
+//        frame.add(this);
+//        frame.setVisible(true);
+//        frame.setSize(600, 400);
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//    }
 }

@@ -3,33 +3,34 @@ package main.Models;
 import main.Utility.Direction;
 
 import java.awt.*;
+import java.awt.geom.Ellipse2D;
 
 
-public class Ball {
+public class Ball extends Ellipse2D.Double {
 
-    private Dimension size = new Dimension(20, 20);
-    private Point position = new Point(640, 360);
+    public double x = 20;
+    public double y = 20;
+    public double width = 20;
+    public double height = 20;
+    public double velocityX = 2;
+    public double velocityY = 2;
 
     public void move(Direction direction){
-        this.position.x += direction.value.x;
-        this.position.y += direction.value.y;
+        this.x += direction.value.x;
+        this.y += direction.value.y;
     }
 
     public void setPosition(int x, int y){
-        this.position.x = x;
-        this.position.y = y;
-    }
-    public Point getPosition(){
-        return this.position;
+        this.x = x;
+        this.y = y;
     }
 
     public void setSize(int width, int height){
-        this.size.width = width;
-        this.size.height = height;
+        this.width = width;
+        this.height = height;
     }
-    public Dimension getSize(){
-        return this.size;
-    }
+
+
 
 
 

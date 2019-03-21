@@ -1,22 +1,19 @@
 package main;
 
-import main.View.GraphicalBall;
 import main.View.Window;
 
-import javax.swing.*;
+import javax.swing.JFrame;
 import java.awt.*;
 
 public class Main {
 
-    public static void main(String[] args) throws InterruptedException {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                Window window = new Window();
-                window.display();
-            }
-        });
+    public static void main(String[] args) {
 
-
-
+            Window window = new Window();
+            JFrame frame = new JFrame("Pong");
+            frame.add(window);
+            frame.setVisible(true);
+            frame.setSize(600, 400);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }

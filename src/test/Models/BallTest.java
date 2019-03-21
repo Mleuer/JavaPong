@@ -16,7 +16,7 @@ public class BallTest {
 
         ball.move(new Direction(4, 4));
 
-        Assert.assertEquals(ball.getPosition().x, 7);
-        Assert.assertEquals(ball.getPosition().y, 11);
+        Assert.assertEquals(ball.x, 7);
+        Assert.assertEquals(ball.y, 11);
     }
 }
