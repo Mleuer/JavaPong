@@ -12,9 +12,8 @@ public class Window extends JPanel implements ActionListener {
 
     Timer timer = new Timer(5, this);
 
-    private Ball ball = new Ball();
+    private Ball ball = new Ball(300, 200, 20, 20);
     private Paddle paddle = new Paddle();
-
 
 
     @Override
@@ -28,24 +27,34 @@ public class Window extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (ball.x < 0 || ball.x > 580 ) {
+        System.out.println(e);
+        if (ball.x < 0 || ball.x > 580) {
             ball.velocityX = -ball.velocityX;
         }
-        if (ball.y < 0 || ball.y > 380 ) {
+        if (ball.y < 0 || ball.y > 380) {
             ball.velocityY = -ball.velocityY;
         }
 
         ball.x += ball.velocityX;
         ball.y += ball.velocityY;
-        repaint();
     }
 
-//    public void display() {
-//
-//        JFrame frame = new JFrame("Pong");
-//        frame.add(this);
-//        frame.setVisible(true);
-//        frame.setSize(600, 400);
-//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//    }
+    public void display() {
+
+
+        JFrame frame = new JFrame("Pong");
+        frame.add(this);
+        frame.setVisible(true);
+        frame.setSize(600, 400);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        try {
+            while (true) {
+                Thread.sleep(32);
+                repaint();
+            }
+        } catch (InterruptedException exception) {
+            System.exit(1);
+        }
+    }
 }

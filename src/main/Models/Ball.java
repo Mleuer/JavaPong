@@ -8,12 +8,12 @@ import java.awt.geom.Ellipse2D;
 
 public class Ball extends Ellipse2D.Double {
 
-    public double x = 20;
-    public double y = 20;
-    public double width = 20;
-    public double height = 20;
     public double velocityX = 2;
     public double velocityY = 2;
+
+    public Ball(double x, double y, double w, double h) {
+        super(x, y, w, h);
+    }
 
     public void move(Direction direction){
         this.x += direction.value.x;
