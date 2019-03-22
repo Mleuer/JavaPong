@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/Main.java" line="9" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/Main.java" line="11" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c90395ff-8656-41e6-9964-5c36ce913ba6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/Models/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Models/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Models/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Models/Paddle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Models/Paddle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/View/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/View/Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Models/BallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Models/BallTest.java" afterDir="false" />
     </list>
@@ -23,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/View/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+            <state relative-caret-position="510">
+              <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,33 +37,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Graphics2D.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/Models/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="789" column="25" selection-start-line="789" selection-start-column="25" selection-end-line="789" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Component.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="3392" column="16" selection-start-line="3392" selection-start-column="16" selection-end-line="3392" selection-end-column="16" />
+            <state relative-caret-position="527">
+              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
               <folding>
-                <element signature="e#116692#116693#0" expanded="true" />
-                <element signature="e#116739#116740#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#698#699#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Thread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="299" column="30" selection-start-line="299" selection-start-column="30" selection-end-line="299" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -69,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Models/Paddle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+            <state relative-caret-position="119">
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,10 +64,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/Timer.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Shape.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="217" column="5" lean-forward="true" selection-start-line="217" selection-start-column="5" selection-end-line="217" selection-end-column="5" />
+            <state relative-caret-position="867">
+              <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -90,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/Models/BallTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,25 +99,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Models/Ball.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+            <state relative-caret-position="85">
+              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#306#307#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/geom/Ellipse2D.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="243" column="24" lean-forward="true" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="60" />
-              <folding>
-                <element signature="e#6156#6157#0" expanded="true" />
-                <element signature="e#6200#6201#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,19 +129,20 @@
         <option value="$PROJECT_DIR$/src/main/Models/GraphicalPaddle.java" />
         <option value="$PROJECT_DIR$/src/main/View/MyPanel.java" />
         <option value="$PROJECT_DIR$/src/main/Models/GraphicalBall.java" />
-        <option value="$PROJECT_DIR$/src/main/Models/Paddle.java" />
         <option value="$PROJECT_DIR$/src/main/View/GraphicalBall.java" />
         <option value="$PROJECT_DIR$/src/main/View/GraphicalPaddle.java" />
         <option value="$PROJECT_DIR$/src/main/Models/Ball.java" />
         <option value="$PROJECT_DIR$/src/test/Models/BallTest.java" />
+        <option value="$PROJECT_DIR$/src/main/Models/Paddle.java" />
         <option value="$PROJECT_DIR$/src/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/View/Window.java" />
+        <option value="$PROJECT_DIR$/src/main/Models/Game.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="2" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
+    <option name="y" value="22" />
     <option name="width" value="1918" />
     <option name="height" value="1011" />
   </component>
@@ -183,7 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,7 +208,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,6 +226,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -324,7 +296,8 @@
       <workItem from="1553034934251" duration="196000" />
       <workItem from="1553035672413" duration="5057000" />
       <workItem from="1553120209640" duration="5252000" />
-      <workItem from="1553208107452" duration="3384000" />
+      <workItem from="1553208107452" duration="6704000" />
+      <workItem from="1553215418270" duration="1291000" />
     </task>
     <servers />
   </component>
@@ -355,13 +328,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26078000" />
+    <option name="totallyTimeSpent" value="30689000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="23" width="1918" height="1011" extended-state="1" />
+    <frame x="1" y="22" width="1918" height="1011" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987245" visible="true" weight="0.1391258" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987245" visible="true" weight="0.1401919" />
       <window_info id="Structure" order="1" sideWeight="0.50127554" side_tool="true" weight="0.19872612" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -370,7 +343,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.265506" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.265506" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39958593" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -563,16 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Models/BallTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/javax/swing/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="562">
@@ -593,14 +556,61 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="4335">
           <caret line="299" column="30" selection-start-line="299" selection-start-column="30" selection-end-line="299" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Models/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Models/BallTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/View/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Component.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="17">
           <caret line="3392" column="16" selection-start-line="3392" selection-start-column="16" selection-end-line="3392" selection-end-column="16" />
           <folding>
             <element signature="e#116692#116693#0" expanded="true" />
@@ -611,49 +621,29 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Graphics2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
+        <state relative-caret-position="17">
           <caret line="789" column="25" selection-start-line="789" selection-start-column="25" selection-end-line="789" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Models/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Models/Paddle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        <state relative-caret-position="119">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/View/Window.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Models/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        <state relative-caret-position="527">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
           </folding>
         </state>
       </provider>

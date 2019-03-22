@@ -3,8 +3,9 @@ package main.Models;
 import main.Utility.Direction;
 
 import java.awt.*;
+import java.awt.geom.Rectangle2D;
 
-public class Paddle {
+public class Paddle extends Rectangle2D.Double {
 
     private Dimension size = new Dimension(30, 200);
     private Point position = new Point(0, 360);
