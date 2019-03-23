@@ -16,15 +16,12 @@ public class Ball extends Ellipse2D.Double {
     }
 
     public void move() {
-        if (this.x < 0 || this.x > 580) {
-            this.velocityX = -this.velocityX;
-        }
+        this.x += this.velocityX;
+        this.y += this.velocityY;
+        
         if (this.y < 0 || this.y > 380) {
             this.velocityY = -this.velocityY;
         }
-
-        this.x += this.velocityX;
-        this.y += this.velocityY;
     }
 
     public void setPosition(int x, int y){

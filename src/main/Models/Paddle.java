@@ -7,26 +7,19 @@ import java.awt.geom.Rectangle2D;
 
 public class Paddle extends Rectangle2D.Double {
 
-    private Dimension size = new Dimension(30, 200);
-    private Point position = new Point(0, 360);
-
-    public void move(Direction direction){
-        this.position.y += direction.value.y;
+    public Paddle(double x, double y, double w, double h) {
+        super(x, y, w, h);
     }
+
+
 
     public void setPosition(int x, int y){
-        this.position.x = x;
-        this.position.y = y;
+        this.x = x;
+        this.y = y;
     }
-    public Point getPosition(){
-        return this.position;
-    }
-
     public void setSize(int width, int height){
-        this.size.width = width;
-        this.size.height = height;
+        this.width = width;
+        this.height = height;
     }
-    public Dimension getSize(){
-        return this.size;
-    }
+    public void move(){}
 }

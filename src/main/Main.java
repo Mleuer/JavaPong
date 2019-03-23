@@ -1,5 +1,6 @@
 package main;
 
+import main.Models.Game;
 import main.View.Window;
 
 import javax.swing.JFrame;

@@ -8,9 +8,9 @@ import java.util.List;
 
 public class Game implements ActionListener {
 
-    private Ball ball = new Ball(300,200,20,20);
-    private Paddle leftTeamPaddle = new Paddle();
-    private Paddle rightTeamPaddle = new Paddle();
+    public Ball ball = new Ball(300,200,20,20);
+    public Paddle leftTeamPaddle = new Paddle(0,150,20,100);
+    public Paddle rightTeamPaddle = new Paddle(580,150,20,100);
     private Dimension size = new Dimension(600, 400);
     private int leftTeamScore = 0;
     private int rightTeamScore = 0;
@@ -27,6 +27,22 @@ public class Game implements ActionListener {
         ball.move();
     }
 
+
+    public void play() {
+        ball.velocityX = 2;
+        ball.velocityY = 2;
+        checkForCollision();
+        score();
+        chooseWinner();
+    }
+    public void checkForCollision() {
+        if (leftTeamPaddle.intersects(ball.x, ball.y, ball.width, ball.height)) {
+            ball.velocityX = -ball.velocityX;
+        }
+        if (rightTeamPaddle.intersects(ball.x, ball.y, ball.width, ball.height)) {
+            ball.velocityX = -ball.velocityX;
+        }
+    }
     public void score() {
         if (ball.x > size.width) {
             leftTeamScore += 1;
@@ -35,8 +51,12 @@ public class Game implements ActionListener {
             rightTeamScore += 1;
         }
     }
-    
-    public void play() {
-        
+    public void chooseWinner(){
+        if (leftTeamScore >= 7) {
+            System.out.println("Left Team Wins");
+        }
+        if (rightTeamScore >= 7) {
+            System.out.println("Right Team Wins");
+        }
     }
 }

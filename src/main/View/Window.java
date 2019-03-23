@@ -17,7 +17,7 @@ public class Window extends JPanel {
     public void paintComponent(Graphics graphics) {
         super.paintComponent(graphics);
         Graphics2D graphics2D = (Graphics2D) graphics;
-        graphics2D.setColor(Color.BLACK);
+        graphics2D.setColor(Color.RED);
 
         for (Shape shape : newGame.getGamePieces()) {
             graphics2D.fill(shape);
