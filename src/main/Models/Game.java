@@ -29,20 +29,18 @@ public class Game implements ActionListener {
 
 
     public void play() {
-        ball.velocityX = 2;
-        ball.velocityY = 2;
-        checkForCollision();
         score();
         chooseWinner();
     }
-    public void checkForCollision() {
-        if (leftTeamPaddle.intersects(ball.x, ball.y, ball.width, ball.height)) {
+    public void changeTrajectory(){
+        if (this.ball.intersects(this.rightTeamPaddle)){
             ball.velocityX = -ball.velocityX;
         }
-        if (rightTeamPaddle.intersects(ball.x, ball.y, ball.width, ball.height)) {
+        if (this.ball.intersects(this.leftTeamPaddle)){
             ball.velocityX = -ball.velocityX;
         }
     }
+    
     public void score() {
         if (ball.x > size.width) {
             leftTeamScore += 1;
