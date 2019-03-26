@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c90395ff-8656-41e6-9964-5c36ce913ba6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Models/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Models/Ball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Models/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/View/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/View/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Models/BallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Models/BallTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Models/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Models/GameTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/View/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="371">
+              <caret line="34" column="61" lean-forward="true" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,34 +39,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Models/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+            <state relative-caret-position="267">
+              <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#797#798#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Models/Paddle.java">
+        <entry file="file://$PROJECT_DIR$/src/main/Models/Ball.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#216#217#0" expanded="true" />
-                <element signature="e#249#250#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Models/GameTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,41 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Models/BallTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Models/PaddleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Models/Ball.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" selection-start-line="13" selection-end-line="16" />
+            <state relative-caret-position="255">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,17 +97,17 @@
         <option value="$PROJECT_DIR$/src/main/Models/GraphicalBall.java" />
         <option value="$PROJECT_DIR$/src/main/View/GraphicalBall.java" />
         <option value="$PROJECT_DIR$/src/main/View/GraphicalPaddle.java" />
-        <option value="$PROJECT_DIR$/src/main/Models/Ball.java" />
-        <option value="$PROJECT_DIR$/src/test/Models/BallTest.java" />
-        <option value="$PROJECT_DIR$/src/main/View/Window.java" />
-        <option value="$PROJECT_DIR$/src/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/Models/Paddle.java" />
+        <option value="$PROJECT_DIR$/src/test/Models/BallTest.java" />
         <option value="$PROJECT_DIR$/src/test/Models/GameTest.java" />
+        <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/View/Window.java" />
+        <option value="$PROJECT_DIR$/src/main/Models/Ball.java" />
         <option value="$PROJECT_DIR$/src/main/Models/Game.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1" />
     <option name="y" value="22" />
     <option name="width" value="1918" />
@@ -163,7 +122,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,6 +175,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,7 +212,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.CheckForCollisionShouldReverseBallVelocityXIfBallAndPaddleOverlap">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="JavaPong" />
@@ -280,6 +239,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BallTest.ReflectVelocityShouldChangePositiveVelocityToNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaPong" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.Models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.Models" />
+      <option name="MAIN_CLASS_NAME" value="test.Models.BallTest" />
+      <option name="METHOD_NAME" value="ReflectVelocityShouldChangePositiveVelocityToNegative" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.CheckForCollisionShouldReflectBallVelocity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaPong" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.Models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.Models" />
+      <option name="MAIN_CLASS_NAME" value="test.Models.GameTest" />
+      <option name="METHOD_NAME" value="CheckForCollisionShouldReflectBallVelocity" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GameTest.CheckForCollisionShouldReverseBallVelocityXIfBallAndPaddleOverlap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaPong" />
       <extension name="coverage">
@@ -298,8 +289,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameTest.CheckForCollisionShouldReverseBallVelocityXIfBallAndPaddleOverlap" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.GameTest.CheckForCollisionShouldReflectBallVelocity" />
+        <item itemvalue="JUnit.BallTest.ReflectVelocityShouldChangePositiveVelocityToNegative" />
+        <item itemvalue="JUnit.GameTest.CheckForCollisionShouldReverseBallVelocityXIfBallAndPaddleOverlap" />
         <item itemvalue="JUnit.BallTest.MoveShouldMoveFourToTheRightAndFourDown" />
       </list>
     </recent_temporary>
@@ -325,31 +318,11 @@
       <workItem from="1553215418270" duration="1291000" />
       <workItem from="1553358251960" duration="4450000" />
       <workItem from="1553393835743" duration="1618000" />
+      <workItem from="1553553501092" duration="8260000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BallTest_MoveShouldMoveFourToTheRightAndFourDown - 2019.03.17 at 14h 36m 15s.xml">
-      <configuration name="BallTest.MoveShouldMoveFourToTheRightAndFourDown" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BallTest_MoveShouldMoveFourToTheRightAndFourDown - 2019.03.17 at 14h 39m 14s.xml">
-      <configuration name="BallTest.MoveShouldMoveFourToTheRightAndFourDown" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BallTest_MoveShouldMoveFourToTheRightAndFourDown - 2019.03.19 at 16h 01m 38s.xml">
-      <configuration name="BallTest.MoveShouldMoveFourToTheRightAndFourDown" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BallTest_MoveShouldMoveFourToTheRightAndFourDown - 2019.03.19 at 16h 04m 37s.xml">
-      <configuration name="BallTest.MoveShouldMoveFourToTheRightAndFourDown" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BallTest_MoveShouldMoveFourToTheRightAndFourDown - 2019.03.21 at 16h 11m 42s.xml">
-      <configuration name="BallTest.MoveShouldMoveFourToTheRightAndFourDown" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BallTest_MoveShouldMoveFourToTheRightAndFourDown - 2019.03.21 at 16h 15m 39s.xml">
-      <configuration name="BallTest.MoveShouldMoveFourToTheRightAndFourDown" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BallTest_MoveShouldMoveFourToTheRightAndFourDown - 2019.03.21 at 16h 16m 30s.xml">
-      <configuration name="BallTest.MoveShouldMoveFourToTheRightAndFourDown" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameTest_CheckForCollisionShouldReverseBallVelocityXIfBallAndPaddleOverlap - 2019.03.23 at 10h 37m 05s.xml">
       <configuration name="GameTest.CheckForCollisionShouldReverseBallVelocityXIfBallAndPaddleOverlap" configurationId="JUnit" />
     </history-entry>
@@ -359,15 +332,36 @@
     <history-entry file="GameTest_CheckForCollisionShouldReverseBallVelocityXIfBallAndPaddleOverlap - 2019.03.23 at 10h 37m 45s.xml">
       <configuration name="GameTest.CheckForCollisionShouldReverseBallVelocityXIfBallAndPaddleOverlap" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameTest_CheckForCollisionShouldReverseBallVelocityXIfBallAndPaddleOverlap - 2019.03.25 at 15h 48m 38s.xml">
+      <configuration name="GameTest.CheckForCollisionShouldReverseBallVelocityXIfBallAndPaddleOverlap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BallTest_ReflectVelocityShouldChangePositiveVelocityToNegative - 2019.03.25 at 16h 07m 06s.xml">
+      <configuration name="BallTest.ReflectVelocityShouldChangePositiveVelocityToNegative" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BallTest_ReflectVelocityShouldChangePositiveVelocityToNegative - 2019.03.25 at 16h 08m 30s.xml">
+      <configuration name="BallTest.ReflectVelocityShouldChangePositiveVelocityToNegative" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_CheckForCollisionShouldReflectBallVelocity - 2019.03.25 at 17h 01m 49s.xml">
+      <configuration name="GameTest.CheckForCollisionShouldReflectBallVelocity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_CheckForCollisionShouldReflectBallVelocity - 2019.03.25 at 17h 08m 30s.xml">
+      <configuration name="GameTest.CheckForCollisionShouldReflectBallVelocity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_CheckForCollisionShouldReflectBallVelocity - 2019.03.25 at 17h 09m 34s.xml">
+      <configuration name="GameTest.CheckForCollisionShouldReflectBallVelocity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_CheckForCollisionShouldReflectBallVelocity - 2019.03.25 at 17h 11m 04s.xml">
+      <configuration name="GameTest.CheckForCollisionShouldReflectBallVelocity" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36757000" />
+    <option name="totallyTimeSpent" value="45017000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="22" width="1918" height="1011" extended-state="0" />
+    <frame x="1" y="22" width="1919" height="1058" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987245" visible="true" weight="0.14232409" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987245" visible="true" weight="0.1433138" />
       <window_info id="Structure" order="1" sideWeight="0.50127554" side_tool="true" weight="0.19872612" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -376,8 +370,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26450893" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39958593" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2640509" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39872748" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -612,19 +606,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/View/Window.java">
+    <entry file="file://$PROJECT_DIR$/src/test/Models/PaddleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Models/Paddle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="391">
           <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -634,37 +625,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Models/BallTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Models/PaddleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Models/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" selection-start-line="13" selection-end-line="16" />
+        <state relative-caret-position="425">
+          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -673,8 +637,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Models/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="440">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="901" column="35" lean-forward="true" selection-start-line="901" selection-start-column="35" selection-end-line="901" selection-end-column="35" />
+          <folding>
+            <element signature="e#31418#31419#0" expanded="true" />
+            <element signature="e#31450#31451#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/View/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="34" column="61" lean-forward="true" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Models/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -683,10 +692,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Models/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        <state relative-caret-position="267">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
           </folding>
         </state>
       </provider>

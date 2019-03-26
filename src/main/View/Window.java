@@ -1,17 +1,20 @@
 package main.View;
 
-import main.Models.Ball;
 import main.Models.Game;
-import main.Models.Paddle;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.util.List;
 import javax.swing.*;
 
 public class Window extends JPanel {
+    
+    private List<Shape> drawables;
+    private Dimension size;
 
-    private Game newGame = new Game();
+    public Window(List<Shape> drawables, Dimension size) {
+        this.drawables = drawables;
+        this.size = size;
+    }
 
     @Override
     public void paintComponent(Graphics graphics) {
@@ -19,7 +22,7 @@ public class Window extends JPanel {
         Graphics2D graphics2D = (Graphics2D) graphics;
         graphics2D.setColor(Color.RED);
 
-        for (Shape shape : newGame.getGamePieces()) {
+        for (Shape shape : drawables) {
             graphics2D.fill(shape);
         }
     }
@@ -28,7 +31,7 @@ public class Window extends JPanel {
         JFrame frame = new JFrame("Pong");
         frame.add(this);
         frame.setVisible(true);
-        frame.setSize(newGame.getSize().width, newGame.getSize().height);
+        frame.setSize(this.size);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         try {
