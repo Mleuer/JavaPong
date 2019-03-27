@@ -1,13 +1,10 @@
 package test.Models;
 
+import Utility.Orientation;
 import main.Models.Ball;
 import main.Models.Game;
-import main.Models.Paddle;
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.awt.*;
-import java.util.List;
 
 public class GameTest {
 
@@ -19,7 +16,7 @@ public class GameTest {
             super(x, y, w, h);
         }
         @Override
-        public void reflectVelocity(){
+        public void reflectVelocity(Orientation surfaceOrientation){
             reflectVelocityWasCalled = true;
         }
     }

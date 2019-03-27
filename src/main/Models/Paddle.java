@@ -10,9 +10,7 @@ public class Paddle extends Rectangle2D.Double {
     public Paddle(double x, double y, double w, double h) {
         super(x, y, w, h);
     }
-
-
-
+    
     public void setPosition(int x, int y){
         this.x = x;
         this.y = y;

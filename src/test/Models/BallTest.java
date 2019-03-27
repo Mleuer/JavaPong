@@ -1,8 +1,7 @@
 package test.Models;
 
+import Utility.Orientation;
 import main.Models.Ball;
-import main.Models.Paddle;
-import main.Utility.Direction;
 import org.junit.Test;
 import org.junit.Assert;
 
@@ -15,15 +14,27 @@ public class BallTest {
     }
     
     @Test
-    public void ReflectVelocityShouldChangePositiveVelocityToNegative(){
+    public void ReflectVelocityShouldReflectYVelocityWhenBallHitsTopOrBottom(){
         var ball = new Ball(30,30,20,20);
         ball.velocityX = 2;
         ball.velocityY = 6;
         
-        ball.reflectVelocity();
+        ball.reflectVelocity(Orientation.Horizontal);
         
-        Assert.assertEquals(-2, ball.velocityX, 0.0);
         Assert.assertEquals(-6, ball.velocityY, 0.0);
+        Assert.assertEquals(2, ball.velocityX, 0.0);
+    }
+    
+    @Test
+    public void ReflectVelocityShouldReflectXVelocityWhenBallHitsAPaddle() {
+        var ball = new Ball(30,30,20,20);
+        ball.velocityX = 2;
+        ball.velocityY = 6;
+
+        ball.reflectVelocity(Orientation.Vertical);
+
+        Assert.assertEquals(-2, ball.velocityX, 0.0); 
+        Assert.assertEquals(6, ball.velocityY, 0.0); 
     }
     
     

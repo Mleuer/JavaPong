@@ -1,15 +1,16 @@
 package main.Models;
 
-import main.Utility.Direction;
+import Utility.Orientation;
+import main.Utility.Utility;
 
-import java.awt.*;
 import java.awt.geom.Ellipse2D;
+import java.util.Random;
 
 
 public class Ball extends Ellipse2D.Double {
 
-    public double velocityX = 2;
-    public double velocityY = 2;
+    public double velocityX = 7;
+    public double velocityY = 6;
 
     public Ball(double x, double y, double w, double h) {
         super(x, y, w, h);
@@ -19,11 +20,17 @@ public class Ball extends Ellipse2D.Double {
         this.x += this.velocityX;
         this.y += this.velocityY;
         System.out.println("Ball's position is " + this.x + ',' + this.y);
+        System.out.println("Ball's velocity is " + this.velocityX + ',' + this.velocityY);
     }
     
-    public void reflectVelocity(){
-        velocityX = -velocityX;
-        velocityY = -velocityY;
+    public void reflectVelocity(Orientation surfaceOrientation){
+        if (surfaceOrientation == Orientation.Vertical) {
+            velocityX = -velocityX + Utility.randomNumberInASetRange(-0.10,0.10);
+            velocityY += Utility.randomNumberInASetRange(-0.10,0.10);
+        }
+        if (surfaceOrientation == Orientation.Horizontal) {
+            velocityY = -velocityY;
+        }
     }
     
 
