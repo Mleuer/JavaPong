@@ -31,7 +31,7 @@ public class Game implements ActionListener {
         double ballSize = size.width * .05;
         ball = new Ball(size.width / 2, size.height / 2, ballSize, ballSize);
         double paddleHeight = size.height / 3;
-        double paddleWidth = size.width / 60;
+        double paddleWidth = size.width / 120;
         leftTeamPaddle = new Paddle(0,(size.height - paddleHeight) / 2, paddleWidth, paddleHeight);
         rightTeamPaddle = new Paddle(size.width - paddleWidth,(size.height - paddleHeight) / 2, paddleWidth, paddleHeight);
         window = new Window(getDrawables(), size);
@@ -45,7 +45,7 @@ public class Game implements ActionListener {
         try {
             while (running) {
                 update();
-                Thread.sleep(128);
+                Thread.sleep(32);
             }
         } catch (InterruptedException exception) {
             System.exit(1);
