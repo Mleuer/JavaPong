@@ -11,7 +11,7 @@ public class Paddle extends Rectangle2D.Double {
         super(x, y, w, h);
     }
     
-    public void setPosition(int x, int y){
+    public void setPosition(double x, double y){
         this.x = x;
         this.y = y;
     }
@@ -19,5 +19,10 @@ public class Paddle extends Rectangle2D.Double {
         this.width = width;
         this.height = height;
     }
-    public void move(){}
+    public void moveUp(){
+        setPosition(x, y - 30);
+    }
+    public void moveDown(){
+        setPosition(x, y + 30);
+    }
 }

@@ -26,7 +26,7 @@ public class Window extends JPanel {
             graphics2D.fill(shape);
         }
     }
-
+    
     public void display() {
         JFrame frame = new JFrame("Pong");
         frame.add(this);

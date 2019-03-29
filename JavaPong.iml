@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="junit:junit:4.12" level="project" />
     <orderEntry type="library" name="org.jfree:fxgraphics2d:1.8" level="project" />
+    <orderEntry type="library" name="org.mockito:mockito-core:2.25.1" level="project" />
   </component>
 </module>

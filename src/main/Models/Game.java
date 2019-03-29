@@ -1,6 +1,7 @@
 package main.Models;
 
 import Utility.Orientation;
+import main.IO.InputController;
 import main.View.Window;
 
 import java.awt.*;
@@ -9,9 +10,9 @@ import java.awt.event.ActionListener;
 import java.util.Arrays;
 import java.util.List;
 
-public class Game implements ActionListener {
-
+public class Game {
     public Window window;
+    public InputController inputController = new InputController();
     public Ball ball;
     public Paddle leftTeamPaddle;
     public Paddle rightTeamPaddle;
@@ -35,10 +36,17 @@ public class Game implements ActionListener {
         leftTeamPaddle = new Paddle(0,(size.height - paddleHeight) / 2, paddleWidth, paddleHeight);
         rightTeamPaddle = new Paddle(size.width - paddleWidth,(size.height - paddleHeight) / 2, paddleWidth, paddleHeight);
         window = new Window(getDrawables(), size);
+        setupPlayerInput();
+    }
+
+    private void setupPlayerInput() {
+        inputController.registerForKeyEvent(InputController.KeyPressType.W, leftTeamPaddle::moveUp);
+        inputController.registerForKeyEvent(InputController.KeyPressType.S, leftTeamPaddle::moveDown);
+        inputController.registerForKeyEvent(InputController.KeyPressType.Up, rightTeamPaddle::moveUp);
+        inputController.registerForKeyEvent(InputController.KeyPressType.Down, rightTeamPaddle::moveDown);
+        window.addKeyListener(inputController);
     }
     
-    @Override
-    public void actionPerformed(ActionEvent e) {}
    
     private void play() {
         running = true;
@@ -55,7 +63,7 @@ public class Game implements ActionListener {
     public void start(){
         Thread thread = new Thread(this::play);
         thread.start();
-        window.display();
+        window.setVisible(true);
     }
     
     public void update(){
