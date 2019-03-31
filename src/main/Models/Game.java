@@ -5,8 +5,6 @@ import main.IO.InputController;
 import main.View.Window;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,14 +27,18 @@ public class Game {
     }
 
     public Game(){
+        initializeGameObjects();
+        window = new Window(getDrawables(), size, inputController);
+        setupPlayerInput();
+    }
+
+    private void initializeGameObjects() {
         double ballSize = size.width * .05;
         ball = new Ball(size.width / 2, size.height / 2, ballSize, ballSize);
         double paddleHeight = size.height / 3;
         double paddleWidth = size.width / 120;
         leftTeamPaddle = new Paddle(0,(size.height - paddleHeight) / 2, paddleWidth, paddleHeight);
         rightTeamPaddle = new Paddle(size.width - paddleWidth,(size.height - paddleHeight) / 2, paddleWidth, paddleHeight);
-        window = new Window(getDrawables(), size, inputController);
-        setupPlayerInput();
     }
 
     private void setupPlayerInput() {
@@ -51,7 +53,7 @@ public class Game {
         try {
             while (running) {
                 update();
-                Thread.sleep(32);
+                Thread.sleep(128);
             }
         } catch (InterruptedException exception) {
             System.exit(1);
@@ -67,17 +69,30 @@ public class Game {
     public void update(){
         ball.move();
         checkForCollision();
-        checkIfPlayerScored();
+        boolean playerScored = updatePlayerScores();
+        if (playerScored) {
+           reset();
+        }
+        updatePlayerScores();
         chooseWinner();
     }
     
-    public void checkIfPlayerScored() {
+    public void reset() {
+        initializeGameObjects();
+    }
+    
+    public boolean updatePlayerScores() {
+        boolean playerScored = false;
+        
         if (ball.x > size.width) {
             leftTeamScore += 1;
+            playerScored = true;
         }
-        if (ball.x < 0) {
+        else if (ball.x < 0) {
             rightTeamScore += 1;
+            playerScored = true;
         }
+        return playerScored;
     }
     
     public void chooseWinner(){
