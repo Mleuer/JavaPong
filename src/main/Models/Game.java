@@ -35,7 +35,7 @@ public class Game {
         double paddleWidth = size.width / 120;
         leftTeamPaddle = new Paddle(0,(size.height - paddleHeight) / 2, paddleWidth, paddleHeight);
         rightTeamPaddle = new Paddle(size.width - paddleWidth,(size.height - paddleHeight) / 2, paddleWidth, paddleHeight);
-        window = new Window(getDrawables(), size);
+        window = new Window(getDrawables(), size, inputController);
         setupPlayerInput();
     }
 
@@ -44,10 +44,8 @@ public class Game {
         inputController.registerForKeyEvent(InputController.KeyPressType.S, leftTeamPaddle::moveDown);
         inputController.registerForKeyEvent(InputController.KeyPressType.Up, rightTeamPaddle::moveUp);
         inputController.registerForKeyEvent(InputController.KeyPressType.Down, rightTeamPaddle::moveDown);
-        window.addKeyListener(inputController);
     }
     
-   
     private void play() {
         running = true;
         try {
@@ -61,9 +59,9 @@ public class Game {
     }
     
     public void start(){
-        Thread thread = new Thread(this::play);
-        thread.start();
-        window.setVisible(true);
+        var gameThread = new Thread(this::play);
+        gameThread.start();
+        window.display();
     }
     
     public void update(){
@@ -77,10 +75,11 @@ public class Game {
         if (ball.x > size.width) {
             leftTeamScore += 1;
         }
-        if (ball.x > size.width) {
+        if (ball.x < 0) {
             rightTeamScore += 1;
         }
     }
+    
     public void chooseWinner(){
         if (leftTeamScore >= 7) {
             System.out.println("Left Team Wins");
@@ -91,6 +90,7 @@ public class Game {
             running = false;
         }
     }
+    
     public void checkForCollision(){
         if (ball.intersects(leftTeamPaddle) || ball.intersects(rightTeamPaddle)) {
             ball.reflectVelocity(Orientation.Vertical);
@@ -99,6 +99,4 @@ public class Game {
             ball.reflectVelocity(Orientation.Horizontal);
         }
     }
-
-    
 }

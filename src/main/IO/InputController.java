@@ -30,8 +30,6 @@ public class InputController implements KeyListener {
                 runnable.run();
             }
         }
-        
-        
     }
     
     @Override

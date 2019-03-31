@@ -21,8 +21,10 @@ public class Paddle extends Rectangle2D.Double {
     }
     public void moveUp(){
         setPosition(x, y - 30);
+        System.out.println("Paddle position is " + this.x + ", " + this.y);
     }
     public void moveDown(){
         setPosition(x, y + 30);
+        System.out.println("Paddle position is " + this.x + ", " + this.y);
     }
 }
