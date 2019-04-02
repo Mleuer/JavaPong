@@ -9,11 +9,13 @@ import java.util.Random;
 
 public class Ball extends Ellipse2D.Double {
 
-    public double velocityX = 20;
-    public double velocityY = 20;
+    public double velocityX;
+    public double velocityY;
 
-    public Ball(double x, double y, double w, double h) {
+    public Ball(double x, double y, double w, double h, double velocityX, double velocityY) {
         super(x, y, w, h);
+        this.velocityX = velocityX;
+        this.velocityY = velocityY;
     }
 
     public void move() {

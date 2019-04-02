@@ -20,8 +20,8 @@ public class Window extends JPanel implements ActionListener {
         this.drawables = drawables;
         this.size = size;
         frame.add(this);
-        frame.setSize(this.size);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(this.size.width, this.size.height + (int)(this.size.height * 0.10));
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.addKeyListener(inputController);
         timer.start();
     }
@@ -35,6 +35,11 @@ public class Window extends JPanel implements ActionListener {
         for (Shape shape : drawables) {
             graphics2D.fill(shape);
         }
+    }
+    
+    public void reset() {
+        frame.setVisible(false);
+        frame.dispose();
     }
     
     public void display() {

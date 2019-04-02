@@ -12,8 +12,8 @@ public class GameTest {
 
         public boolean reflectVelocityWasCalled = false;
 
-        public MockBall(double x, double y, double w, double h) {
-            super(x, y, w, h);
+        public MockBall(double x, double y, double w, double h, double velX, double velY) {
+            super(x, y, w, h, velX, velY);
         }
         @Override
         public void reflectVelocity(Orientation surfaceOrientation){
@@ -24,7 +24,7 @@ public class GameTest {
     @Test
     public void CheckForCollisionShouldReflectBallVelocity(){
         Game game = new Game();
-        var ball = new MockBall(60,60,61,61);
+        var ball = new MockBall(60,60,61,61, 5, 0);
         game.ball = ball;
         game.ball.velocityX = 5;
         game.rightTeamPaddle.setPosition(90,90);
