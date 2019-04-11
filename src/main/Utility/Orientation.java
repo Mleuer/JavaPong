@@ -1,4 +1,4 @@
-package Utility;
+package main.Utility;
 
 public enum Orientation { 
     Horizontal,

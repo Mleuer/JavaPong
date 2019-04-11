@@ -1,6 +1,6 @@
 package main.Models;
 
-import Utility.Orientation;
+import main.Utility.Orientation;
 import main.IO.InputController;
 import main.View.Window;
 

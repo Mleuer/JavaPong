@@ -1,10 +1,9 @@
 package main.Models;
 
-import Utility.Orientation;
+import main.Utility.Orientation;
 import main.Utility.Utility;
 
 import java.awt.geom.Ellipse2D;
-import java.util.Random;
 
 
 public class Ball extends Ellipse2D.Double {

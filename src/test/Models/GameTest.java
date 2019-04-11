@@ -1,6 +1,6 @@
 package test.Models;
 
-import Utility.Orientation;
+import main.Utility.Orientation;
 import main.Models.Ball;
 import main.Models.Game;
 import org.junit.Assert;
