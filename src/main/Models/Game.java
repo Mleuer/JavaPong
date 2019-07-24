@@ -5,10 +5,12 @@ import main.IO.InputController;
 import main.View.Window;
 
 import java.awt.*;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Game {
+public class Game implements Serializable {
     private Window window;
     public InputController inputController = new InputController();
     public Ball ball;
@@ -18,10 +20,17 @@ public class Game {
     private int leftTeamScore = 0;
     private int rightTeamScore = 0;
     private boolean running;
+    private ArrayList<Shape> drawables;
 
     public List<Shape> getDrawables(){
-        return Arrays.asList(this.ball, this.leftTeamPaddle, this.rightTeamPaddle);
+        return drawables;
     }
+
+    private void updateDrawables() {
+        drawables.clear();
+        drawables.addAll(Arrays.asList(ball, leftTeamPaddle, rightTeamPaddle));
+    }
+
     public Dimension getSize() {
         return size;
     }
@@ -32,6 +41,7 @@ public class Game {
 
     private void initialize() {
         initializeGameObjects();
+        drawables = new ArrayList<>(Arrays.asList(this.ball, this.leftTeamPaddle, this.rightTeamPaddle));
         window = new Window(getDrawables(), size, inputController);
         setupPlayerInput();
     }
@@ -50,6 +60,8 @@ public class Game {
         inputController.registerForKeyEvent(InputController.KeyPressType.S, leftTeamPaddle::moveDown);
         inputController.registerForKeyEvent(InputController.KeyPressType.Up, rightTeamPaddle::moveUp);
         inputController.registerForKeyEvent(InputController.KeyPressType.Down, rightTeamPaddle::moveDown);
+        inputController.registerForKeyEvent(InputController.KeyPressType.F5, this::saveGame);
+        inputController.registerForKeyEvent(InputController.KeyPressType.F9, this::loadGame);
     }
     
     private void play() {
@@ -57,7 +69,7 @@ public class Game {
         try {
             while (running) {
                 update();
-                Thread.sleep(128);
+                Thread.sleep(8);
             }
         } catch (InterruptedException exception) {
             System.exit(1);
@@ -119,5 +131,46 @@ public class Game {
         if (ball.y <= 0 || ball.y + ball.height >= size.height) {
             ball.reflectVelocity(Orientation.Horizontal);
         }
+    }
+
+    public void saveGame() {
+        try {
+            ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Adam\\Saved Games\\JavaPong\\Save.txt"));
+            serialize(outputStream);
+            System.out.println("Saved Game");
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+    }
+
+    public void loadGame() {
+        try {
+            ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("C:\\Users\\Adam\\Saved Games\\JavaPong\\Save.txt"));
+            deserialize(inputStream);
+            updateDrawables();
+            System.out.println("Loaded Game");
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        }
+    }
+
+    public void serialize(ObjectOutputStream outputStream) throws IOException {
+//        this.ball.serialize(outputStream);
+//        this.leftTeamPaddle.serialize(outputStream);
+//        this.rightTeamPaddle.serialize(outputStream);
+
+        outputStream.writeObject(ball);
+        outputStream.writeObject(leftTeamPaddle);
+        outputStream.writeObject(rightTeamPaddle);
+    }
+
+    public void deserialize(ObjectInputStream inputStream) throws IOException, ClassNotFoundException {
+//        ball = Ball.deserialize(inputStream);
+//        leftTeamPaddle = Paddle.deserialize(inputStream);
+//        rightTeamPaddle = Paddle.deserialize(inputStream);
+
+        ball = (Ball) inputStream.readObject();
+        leftTeamPaddle = (Paddle) inputStream.readObject();
+        rightTeamPaddle = (Paddle) inputStream.readObject();
     }
 }

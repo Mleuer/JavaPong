@@ -4,9 +4,13 @@ import main.Utility.Orientation;
 import main.Utility.Utility;
 
 import java.awt.geom.Ellipse2D;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
 
-public class Ball extends Ellipse2D.Double {
+public class Ball extends Ellipse2D.Double implements Serializable {
 
     public double velocityX;
     public double velocityY;
@@ -32,6 +36,15 @@ public class Ball extends Ellipse2D.Double {
         if (surfaceOrientation == Orientation.Horizontal) {
             velocityY = -velocityY;
         }
+    }
+
+    public void serialize(ObjectOutputStream outputStream) throws IOException {
+        outputStream.writeObject(this);
+    }
+
+    public static Ball deserialize(ObjectInputStream inputStream) throws IOException, ClassNotFoundException {
+        var ball = (Ball) inputStream.readObject();
+        return ball;
     }
 }
 

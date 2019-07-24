@@ -17,7 +17,6 @@ public class InputController implements KeyListener {
     
     @Override
     public void keyTyped(KeyEvent event) {
-        boolean t = true;
     }
 
     @Override
@@ -52,7 +51,9 @@ public class InputController implements KeyListener {
         S(0x53),
         Space(0x20),
         Up(0x26),
-        Down(0x28);
+        Down(0x28),
+        F5(0x74),
+        F9(0x78);
        
         public int keyCode; 
         
